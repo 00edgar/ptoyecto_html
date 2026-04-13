@@ -1,0 +1,39 @@
+#cuerpo{
+background-color: aqua;
+}
+#encabezado{
+    margin-top: 20px;
+    display: grid;
+    background-color:cadetblue;
+    width: 100%;
+    height: auto;
+    text-decoration: center;
+    justify-content: center;
+    gap:20px 
+}
+h1{ 
+    text-align: center;
+    margin-top: 20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+    background-color:cadetblue;
+    width: 100%;
+    height: 100%;
+    grid-area: auo;
+}
+.boton {
+    text-decoration: none;
+    margin-top:50PX;
+    justify-content: center;
+    display: flex ;
+    align-items: center;
+    text-align: center;
+    width: 200PX;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    color:BLUE;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+}
