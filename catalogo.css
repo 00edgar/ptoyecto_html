@@ -38,6 +38,7 @@ h1{
     gap: 50px;
 }
 .contenedor_imagen_catalogo{
+    border-radius: 20%;
     display: grid;
     width: 200px;
     height:auto;
@@ -48,6 +49,7 @@ h1{
     text-align: center;
 }
 img{
+    border-radius: 20%;
     width:150px ;
     margin-top: 25px;
     border-top: 25px;
