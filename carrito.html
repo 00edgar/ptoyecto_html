@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+
+    <div class="cart-container">
+        <header class="cart-header">
+            <button class="back-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <h1>Mi Carrito (3)</h1>
+        </header>
+
+        <main class="cart-items">
+            
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="Taza"> </div>
+                <div class="product-info">
+                    <div class="product-title-row">
+                        <h3>Taza de Cerámica Campus</h3>
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                    <p class="ref">Ref: #SKU12345</p>
+                    <div class="product-controls">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="price">
+                            <span class="amount">$12.50</span>
+                            <span class="label">subtotal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="Sudadera"> </div>
+                <div class="product-info">
+                    <div class="product-title-row">
+                        <h3>Sudadera con Capucha Gris</h3>
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                    <p class="ref">Ref: #SKU67890</p>
+                    <div class="product-controls">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="price">
+                            <span class="amount">$45.00</span>
+                            <span class="label">subtotal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="Mochila"> </div>
+                <div class="product-info">
+                    <div class="product-title-row">
+                        <h3>Mochila Resistente Negra</h3>
+                        <button class="delete-btn">🗑️</button>
+                    </div>
+                    <p class="ref">Ref: #SKU11223</p>
+                    <div class="product-controls">
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="price">
+                            <span class="amount">$38.99</span>
+                            <span class="label">subtotal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="cart-summary">
+            <div class="summary-line">
+                <span>Subtotal</span>
+                <span>$96.49</span>
+            </div>
+            <div class="summary-line">
+                <span>Impuestos</span>
+                <span>$18.33</span>
+            </div>
+            <div class="total-line">
+                <span>Total</span>
+                <span class="total-amount">$114.82</span>
+            </div>
+            <a class="btn-checkout" href="index.html">Proceder al Pago</a>
+        </footer>
+    </div>
+
+</body>
+</html>
