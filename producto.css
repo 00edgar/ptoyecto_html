@@ -40,6 +40,16 @@
     height: auto;  
    /* background: linear-gradient(135deg, #033cf5, #a777e3); */
 }
+.contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align:center; ;
+    width: 100%;
+    height: auto;  
+}
 .imagen{ 
     border-radius: 30px;
     display:flex;
@@ -85,4 +95,9 @@ button{
     background: linear-gradient(135deg, #0be22f, #a777e3);
     border: none;
     border-radius: 50px;
+}
+h2{
+    text-align: center;
+    text-emphasis: none;
+    font-size: 40px;
 }
