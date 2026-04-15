@@ -1,0 +1,88 @@
+
+#encabezado{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    background-color:cadetblue;
+    width: 100%;
+    height: auto;
+    text-decoration: center;
+    justify-content: center;
+    gap:20px 
+}
+.boton {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    margin-top:50PX;
+    justify-content: center;
+    display: flex ;
+    align-items: center;
+    text-align: center;
+    width: 200PX;
+    height: 50PX;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    color:BLUE;
+    background: linear-gradient(135deg, #033cf5, #a777e3);
+    border: none;
+    border-radius: 50px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align:center; ;
+    width: 100%;
+    height: auto;  
+   /* background: linear-gradient(135deg, #033cf5, #a777e3); */
+}
+.imagen{ 
+    border-radius: 30px;
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 300px; 
+}
+p{
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    color:BLUE;
+    align-items: baseline;
+    justify-content:left;
+    display:flex;
+}
+.imagenes{
+    background: linear-gradient(135deg, #0ab0e2, #3402a84b);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: auto; 
+    border-radius: 20PX;
+}
+button{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    margin-top:10PX;
+    justify-content: center;
+    display: flex ;
+    align-items: center;
+    text-align: center;
+    width: 200PX;
+    height: 50PX;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    color:BLUE;
+    background: linear-gradient(135deg, #0be22f, #a777e3);
+    border: none;
+    border-radius: 50px;
+}
