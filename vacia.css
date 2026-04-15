@@ -1,0 +1,121 @@
+/* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #2b07f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor tipo Móvil */
+.cart-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.cart-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-header h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1a1a1a;
+}
+
+/* Contenido Central */
+.cart-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 180px;
+    height: 180px;
+    background-color: #e8edea;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.empty-cart-img {
+    width: 80px;
+    height: 80px;
+    /* Estilo temporal para visualizar el espacio de la imagen si está vacía */
+    background-color: #cbd5ce; 
+    display: block;
+}
+
+.cart-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.cart-content p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Footer y Botón */
+.cart-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn-explore {
+    width: 100%;
+    padding: 15px;
+    background-color: #1d4d2f; /* Verde oscuro similar a la imagen */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-explore:hover {
+    background-color: #153a23;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
