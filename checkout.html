@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="contenedor-pago">
+        <header class="header-pago">
+            <a href="index.html" class="btn-regresar"><i class="fas fa-arrow-left"></i></a>
+            <h1>Finalizar Compra</h1>
+        </header>
+
+        <form class="formulario-checkout">
+            <section class="seccion">
+                <h2>Envío</h2>
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="campo">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" placeholder="Calle, número y colonia" required>
+                </div>
+                <div class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" placeholder="Tu ciudad" required>
+                </div>
+            </section>
+
+            <section class="seccion">
+                <h2>Método de Pago</h2>
+                <div class="opciones-pago">
+                    <label class="tarjeta-pago">
+                        <input type="radio" name="metodo" checked>
+                        <div class="contenido-pago">
+                            <i class="fab fa-cc-visa"></i>
+                            <span>Visa</span>
+                        </div>
+                    </label>
+                    <label class="tarjeta-pago">
+                        <input type="radio" name="metodo">
+                        <div class="contenido-pago">
+                            <i class="fab fa-cc-mastercard"></i>
+                            <span>MasterCard</span>
+                        </div>
+                    </label>
+                    <label class="tarjeta-pago">
+                        <input type="radio" name="metodo">
+                        <div class="contenido-pago">
+                            <i class="fab fa-paypal"></i>
+                            <span>PayPal</span>
+                        </div>
+                    </label>
+                </div>
+            </section>
+
+            <section class="resumen-orden">
+                <h3>Resumen de tu Orden</h3>
+                
+                <div class="item-carrito">
+                    <img src="img/tenis1.png" alt="Zapatillas">
+                    <div class="item-info">
+                        <p class="item-nombre">Zapatillas Deportivas</p>
+                        <p class="item-cantidad">Cantidad: 1</p>
+                    </div>
+                    <span class="item-precio">Q500.00</span>
+                </div>
+
+                <div class="item-carrito">
+                    <img src="img/ropap5.png" alt="Auriculares">
+                    <div class="item-info">
+                        <p class="item-nombre">ropa de niño</p>
+                        <p class="item-cantidad">Cantidad: 1</p>
+                    </div>
+                    <span class="item-precio">Q150.00</span>
+                </div>
+
+                <hr class="divisor">
+                
+                <div class="total-fila">
+                    <span>Total</span>
+                    <span class="monto-total">Q650.00</span>
+                </div>
+            </section>
+
+            <a href="index.html" type="submit" class="btn-pagar">
+                Pagar $224.50
+            </a>
+        </form>
+    </div>
+
+</body>
+</html>

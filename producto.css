@@ -1,11 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+/*.fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}*/
 
 #encabezado{
     margin: 0;
     padding: 0;
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color:cadetblue;
+
     width: 100%;
     height: auto;
     text-decoration: center;
@@ -15,20 +27,64 @@
 .boton {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    margin-top:50PX;
+    text-decoration: none; 
     justify-content: center;
     display: flex ;
     align-items: center;
     text-align: center;
-    width: 200PX;
-    height: 50PX;
+    width: 120PX;
+    height: 30PX;
     font-size: 18px;
     font-family: 'Segoe UI', sans-serif;
     color:BLUE;
     background: linear-gradient(135deg, #033cf5, #a777e3);
     border: none;
     border-radius: 50px;
+}
+#encabezado {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* permite que baje en pantallas pequeñas */
+    gap: 15px;
+}
+
+/* Botones */
+.boton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #033cf5, #a777e3);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Efecto hover */
+.boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #022bb5, #8e5cd1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color:blue;
+    margin-bottom: 10px;
+}
+#encabezado {
+    position: relative;
+    top: 0;
+    z-index: 1000;
 }
 .contenedor{
     display: flex;
@@ -59,6 +115,7 @@
     justify-content: center;
     width: 230px;
     height: 300px; 
+    border: black solid 3px;
 }
 p{
     font-size: 18px;

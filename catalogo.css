@@ -1,14 +1,20 @@
-html{
-    background-color:cadetblue;
+/* Fondo general */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #5f9ea0, #3e8e9e);
 }
+
+
+
 
 
 #encabezado{
     margin: 0;
     padding: 0;
-    margin-top: 20px;
     display: flex;
-    background-color:cadetblue;
+    flex-wrap: wrap;
+
     width: 100%;
     height: auto;
     text-decoration: center;
@@ -18,14 +24,13 @@ html{
 .boton {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    margin-top:50PX;
+    text-decoration: none; 
     justify-content: center;
     display: flex ;
     align-items: center;
     text-align: center;
-    width: 200PX;
-    height: 50PX;
+    width: 120PX;
+    height: 30PX;
     font-size: 18px;
     font-family: 'Segoe UI', sans-serif;
     color:BLUE;
@@ -33,34 +38,99 @@ html{
     border: none;
     border-radius: 50px;
 }
-h1{
-    text-align: center;
-}
-#contenedor{
-    background-color: radial-gradient(red, cyan,blue, );
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+#encabezado {
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 50px;
-}
-.contenedor_imagen_catalogo{
-    border-radius: 20%;
-    display: grid;
-    width: 200px;
-    height:auto;
-    background-color:gray;
-    border-radius: 50PX;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    flex-wrap: wrap; /* permite que baje en pantallas pequeñas */
+    gap: 15px;
 }
-img{
-    border-radius: 20%;
-    width:150px ;
-    margin-top: 25px;
-    border-top: 25px;
-    height: 150px;
 
+/* Botones */
+.boton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #033cf5, #a777e3);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+/* Efecto hover */
+.boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #022bb5, #8e5cd1);
+}
+
+
+
+
+
+/* CONTENEDOR PRINCIPAL */
+#contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* clave para responsive */
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* TARJETAS DE CATEGORÍA */
+.contenedor_imagen_catalogo {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover tarjeta */
+.contenedor_imagen_catalogo:hover {
+    transform: translateY(-8px);
+}
+
+/* TÍTULO DE CATEGORÍA */
+.contenedor_imagen_catalogo {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #333;
+}
+
+/* IMÁGENES */
+.imagen {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover imagen */
+.imagen:hover {
+    transform: scale(1.05);
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+
+
+

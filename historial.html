@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Pedidos</title>
+    <link rel="stylesheet" href="historial.css">
+</head>
+<body>
+
+    <main class="contenedor-historial">
+        <header class="encabezado">
+            <a href="index.html" class="btn-atras"><i class="fas fa-chevron-left"></i></a>
+            <h1>Historial de Pedidos</h1>
+        </header>
+
+        <section class="lista-pedidos">
+            <div class="tarjeta-pedido">
+                <div class="fila-superior">
+                    <span class="id-orden">tercera orden</span>
+                    <span class="precio-orden">Q650.00</span>
+                </div>
+                <p class="fecha-orden">15 Oct, 2025</p>
+                
+                <div class="fila-inferior">
+                    <span class="estado entregado">
+                        <i class="fas fa-check-circle"></i> Entregado
+                    </span>
+                    <a href="#" class="btn-detalle">Ver detalle <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="tarjeta-pedido">
+                <div class="fila-superior">
+                    <span class="id-orden">segunda orden</span>
+                    <span class="precio-orden">Q1200</span>
+                </div>
+                <p class="fecha-orden">12 Oct, 2022</p>
+                
+                <div class="fila-inferior">
+                    <span class="estado en-camino">
+                        <i class="fas fa-truck"></i> Entregado
+                    </span>
+                    <a href="#" class="btn-detalle">Ver detalle <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="tarjeta-pedido">
+                <div class="fila-superior">
+                    <span class="id-orden">primera orden</span>
+                    <span class="precio-orden">$210.00</span>
+                </div>
+                <p class="fecha-orden">05 Oct, 2020</p>
+                
+                <div class="fila-inferior">
+                    <span class="estado cancelado">
+                        <i class="fas fa-times-circle"></i> Entregado
+                    </span>
+                    <a href="#" class="btn-detalle">Ver detalle <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="barra-navegacion">
+            <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>Inicio</span></a>
+            <a href="catalogo.html" class="nav-item"><i class="fas fa-th-large"></i><span>Categorías</span></a>
+            <a href="carrito.html" class="nav-item"><i class="fas fa-shopping-cart"></i><span>Carrito</span></a>
+            <a href="producto.html" class="nav-item activo"><i class="fas fa-box"></i><span>productos</span></a>
+            <a href="perfil.html" class="nav-item"><i class="fas fa-user"></i><span>Perfil</span></a>
+        </footer>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+ /* Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contenedor-perfil {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+/* Encabezado */
+.encabezado {
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Información de Usuario */
+.seccion-usuario {
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+.avatar-contenedor {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    background-color: #e2e8f0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #f1f5f9;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nombre-usuario {
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+.correo-usuario {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Cuadrícula de Botones */
+.cuadricula-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.tarjeta-opcion {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.tarjeta-opcion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    border-color: #3b82f6;
+}
+
+.tarjeta-opcion .icono {
+    font-size: 1.8rem;
+    color: #3b82f6;
+}
+
+.tarjeta-opcion span {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* Botón especial de Cerrar Sesión */
+.cerrar-sesion .icono, 
+.cerrar-sesion span {
+    color: #ef4444;
+}
+
+.cerrar-sesion:hover {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+/* Barra de Navegación Inferior */
+.barra-navegacion {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 1px solid #e2e8f0;
+    z-index: 10;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #94a3b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    gap: 4px;
+}
+
+.nav-item i {
+    font-size: 1.2rem;
+}
+
+.nav-item.activo {
+    color: #10b981; /* Color verde como en tu imagen */
+}
