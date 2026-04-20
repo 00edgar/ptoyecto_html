@@ -1,8 +1,51 @@
-h1{
-    text-align: center;
-    justify-content: center;
+body{
+ background-color: antiquewhite;   
+ }
+ h1{text-align: center;}
+
+ .continer {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+place-items: center;
+ }
+ img{
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+ }
+ .producto{
+    display: grid;
+place-items: center;
+ }
+
+ .barra-navegacion {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 1px solid #e2e8f0;
+    z-index: 10;
 }
 
-th{background-color: antiquewhite;
-width: 10%;
-height: 100PX;}
+.nav-item {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    gap: 4px;
+}
+
+.nav-item i {
+    width: 300px;
+    height: 100ppx;
+    font-size: 1.2rem;
+    background-color: rgb(99, 241, 241);
+}
+
+.nav-item.activo {
+    color: #10b981; /* Color verde como en tu imagen */}
